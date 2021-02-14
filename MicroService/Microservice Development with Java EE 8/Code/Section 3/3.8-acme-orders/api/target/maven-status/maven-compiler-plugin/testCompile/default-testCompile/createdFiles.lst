@@ -1,0 +1,3 @@
+com/acme/orders/api/tests/OrderServiceImplTest.class
+com/acme/orders/api/tests/OrderResourceTest.class
+com/acme/orders/api/tests/OrderDAOTest.class

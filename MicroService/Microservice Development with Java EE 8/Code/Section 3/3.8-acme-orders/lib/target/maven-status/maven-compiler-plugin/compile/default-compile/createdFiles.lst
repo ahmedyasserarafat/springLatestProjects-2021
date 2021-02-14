@@ -1,0 +1,6 @@
+com/acme/orders/lib/v1/OrderItem.class
+com/acme/orders/lib/v1/common/BaseType.class
+com/acme/orders/lib/v1/OrderStatus.class
+com/acme/orders/lib/v1/Order.class
+com/acme/orders/lib/v1/common/OrderServiceErrorCode.class
+com/acme/orders/lib/v1/common/ApiError.class

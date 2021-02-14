@@ -1,0 +1,16 @@
+Currency Exchange Service
+- http://localhost:8000/currency-exchange/from/USD/to/INR
+
+http://34.71.51.225:8000/currency-exchange/from/USD/to/INR
+watch curl http://34.71.51.225:8000/currency-exchange/from/USD/to/INR
+
+Currency Conversion Service
+- http://localhost:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+watch -n 0.1 curl http://34.122.43.185:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
+
+http://35.223.40.231:8000/actuator/health/
+http://35.223.40.231:8000/actuator/health/liveness
+http://35.223.40.231:8000/actuator/health/readiness
+
+"2021-02-01 19:56:46.920  INFO [currency-conversion,67eb7c62dedbc9f2,67eb7c62dedbc9f2] 1 --- [nio-8100-exec-5] c.i.m.c.CurrencyConversionController     : calculateCurrencyConversionFeign called with USD to INR with 10

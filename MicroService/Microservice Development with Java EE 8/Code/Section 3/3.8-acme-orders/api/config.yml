@@ -1,0 +1,21 @@
+server:
+  applicationConnectors:
+  - type: http
+    port: 9000
+  adminConnectors:
+  - type: http
+    port: 9001
+database:
+  driverClass: org.h2.Driver
+  user: sa
+  password: sa
+  url: jdbc:h2:mem:acme-customers;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+  properties:
+    charSet: UTF-8
+    hibernate.hbm2ddl.auto: create
+
+
+customersUrl: http://localhost:8080/acme-customers-api/v1
+catalogueUrl: http://localhost:9080/acme-monolith-soap/ECommerceWs?wsdl
+paymentsUrl: http://localhost:8000
+authPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmeUSwn1e7SR3v6CicUJ5KvHoc4zeQr/phclJ9PhETxUXMxfYW2zGda/dOOfgMGiiijZxNlHsn+hXitWaVyAU2mlAztQS09+eEQeclRgFEidxih9ZzRWE1RstQ0mp+K8gWY7NB3PLDiVZIeYblU4eaVflogMTOx1YQmJqXXyWSVJELz1usBCdZDLTfJu95oK7QVVVKW6QLOM2bTySvT1krBbvteL3vid9vaXVrJO3BDsh396qT0POSz6y7HFZuekPINxcxuynH5Hk1tdvF6RyFCXdmDbaJ2yf6AMZ8Y4lmhvp7udKpoCTxtqGfcWEl0BV7R++PQ4C7ZXUW95BQ0ujvwIDAQAB

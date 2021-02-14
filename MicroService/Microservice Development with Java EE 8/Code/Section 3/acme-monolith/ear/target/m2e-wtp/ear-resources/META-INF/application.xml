@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd" version="7">
+  <description>ACME Monolith for the eCommerce application</description>
+  <display-name>acme-monolith-ear</display-name>
+  <module>
+    <ejb>acme-monolith-services-1.0.0-SNAPSHOT.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>acme-monolith-soap-1.0.0-SNAPSHOT.war</web-uri>
+      <context-root>/acme-monolith-soap</context-root>
+    </web>
+  </module>
+  <module>
+    <web>
+      <web-uri>acme-monolith-web-1.0.0-SNAPSHOT.war</web-uri>
+      <context-root>/acme-monolith-web</context-root>
+    </web>
+  </module>
+  <library-directory>lib</library-directory>
+</application>
