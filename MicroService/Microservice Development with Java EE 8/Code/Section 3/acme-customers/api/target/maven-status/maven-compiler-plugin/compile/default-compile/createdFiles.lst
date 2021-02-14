@@ -1,0 +1,14 @@
+com/acme/customers/api/rest/v1/auth/User$Access.class
+com/acme/customers/api/models/db/common/BaseEntity_.class
+com/acme/customers/api/models/db/common/BaseEntity.class
+com/acme/customers/api/services/exceptions/EmptyPayloadException.class
+com/acme/customers/api/rest/v1/auth/User.class
+com/acme/customers/api/services/exceptions/GeneralServiceException.class
+com/acme/customers/api/rest/v1/filters/CorsFilter.class
+com/acme/customers/api/rest/v1/auth/AuthContext.class
+com/acme/customers/api/services/exceptions/ResourceNotFoundException.class
+com/acme/customers/api/services/exceptions/UnauthorizedException.class
+com/acme/customers/api/rest/v1/resources/HealthResource.class
+com/acme/customers/api/rest/v1/filters/LoggerInterceptor.class
+com/acme/customers/api/rest/v1/providers/JacksonProvider.class
+com/acme/customers/api/services/exceptions/IdMismatchException.class

@@ -1,0 +1,5 @@
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/acme-customers/lib/src/main/java/com/acme/customers/lib/v1/Customer.java
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/acme-customers/lib/src/main/java/com/acme/customers/lib/v1/response/CustomerList.java
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/acme-customers/lib/src/main/java/com/acme/customers/lib/v1/common/BaseType.java
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/acme-customers/lib/src/main/java/com/acme/customers/lib/v1/CustomerStatus.java
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/acme-customers/lib/src/main/java/com/acme/customers/lib/v1/common/ApiError.java

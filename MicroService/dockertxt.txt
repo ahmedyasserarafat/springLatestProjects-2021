@@ -1,0 +1,126 @@
+Docker container is instance of image which is isoloated
+
+sudo chown -R ahmed /var/run/docker.sock
+docker ps -a or docker inspect containerid
+
+docker images 
+
+docker run busybox echo hi
+docker run ubuntu sleep 5
+
+docker create hello-world----will give containerid
+
+docker start -a containerId------------------- staring and restarting the exited container
+
+docker run hello-world
+
+docker system prune-----deletes all containers which are old
+
+docker image prune -a
+
+docker stop/kill containerid/imgid
+
+docker container id  start/stop/kill
+
+docker image id  start/stop/kill
+**********
+
+docker run -it -d  mongo
+docker logs
+
+docker run -it -d  ubuntu
+docker run -it -d  ubuntu ls---------imp-----------------------------------
+
+docker ps -a 
+docker start -a 98662a6c8ccc------execute old comand
+docker start 98662a6c8ccc
+docker exec -it -d 98662a6c8ccc  bin/bash
+
+
+---------------------------after running docker container using run docker run redis and if we
+want to connect to terminal 
+
+docker exec -it -d 98662a6c8ccc  bin/bash
+--------------------------------------------------------------------------------------------------
+
+
+--------------without it----------------------------------
+docker run --rm alpine sh -c "apk update && apk add curl"
+
+docker run --name centos-linux -d centos /bin/sh -c "while true; do ping 8.8.8.8; done"
+docker exec -it centos-linux /bin/bash
+docker exec -it centos-linux ip add show -----without interactive  shell
+https://linuxconfig.org/how-to-start-a-docker-container-as-daemon-process\
+
+
+https://stackoverflow.com/questions/28212380/why-docker-container-exits-immediately
+
+-------------------------------Building docker Image
+
+generate Dockerfile with the name Dockerfile
+#use Existing doccker image
+From alphine
+#  packages
+apk add --update redis
+apk add --update gcc
+# start
+CMD ["redis-server"]
+
+# building image
+docker build ./folder path---------to build  or   docker build -t arafat ./folder path
+
+#running image
+docker run arafat
+-----------------------------------------------------------------------------------------
+# running separately what is preent in docker file
+docker run -it alphine sh
+apk add --update redis
+apk add --update gcc
+docker commit -c 'CMD["redis-server"]' containerid
+docker run fc89776565465768
+
+------------------------------------------Mysql------------------------------------------------
+
+docker run --detach --env MYSQL_ROOT_PASSWORD=sa --env MYSQL_USER=root --env MYSQL_PASSWORD=sa --env MYSQL_DATABASE=todos --name mysql --publish 3306:3306 mysql:5.7
+
+sudo docker exec -it mysql /bin/bash   or sudo docker exec -it mysql bash
+
+---------------------------docker exec -it mysql bash-------------------------------------
+docker exec -it mysql mysql -uroot -p
+
+
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'sa'
+
+
+-----------------------------------------------
+#detach and attach
+docker run -d oiioh-------will run in background
+docker attach  oiioh--------will come to foreground
+
+ 716  docker run -dit openjdk:8-jdk-alpine
+  720  docker container cp target/docker-in-5-steps-todo-rest-api-h2-1.0.0.RELEASE.jar 28d5e5d893fdb1530e9920ff66fee252adc834a8b572b77b3fdf7d316730127c:/tmp
+  
+  725  docker container exec distracted_hodgkin ls /tmp
+  
+  docker container commit romantic_aryabhata in28min/manual-todo-rest-api:v1
+ 
+    734  docker container commit distracted_hodgkin in28min/manual-todo-rest-api:v1
+docker container cp target/hello-world-rest-api.jar afb5a1d19d57:/tmp
+
+ docker exec -it distracted_hodgkin /bin/sh
+
+docker container commit --change='CMD ["java","-jar","/tmp/hello-world-rest-api.jar"]' distracted_hodgkin arafat1234/hello-world-rest-api:v001
+  743  docker run -d -p 5000:8080 arafat1234/hello-world-rest-api:v001
+  
+   docker run -d -p 5000:8080 arafat1234/hello-world-rest-api:v001
+
+ sudo docker push arafat1234/mmv2-currency-conversion-service:0.0.12-SNAPSHOT
+ 
+ 
+ gcloud container clusters resize --zone <name_of_zone> <name_of_your_cluster> --num-nodes=0
+ 
+ gcloud container clusters resize --zone <name_of_zone> <name_of_your_cluster> --num-nodes=3
+ 
+
+

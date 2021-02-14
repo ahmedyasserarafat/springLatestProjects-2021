@@ -1,0 +1,6 @@
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/3.8-acme-orders/lib/src/main/java/com/acme/orders/lib/v1/Order.java
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/3.8-acme-orders/lib/src/main/java/com/acme/orders/lib/v1/OrderItem.java
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/3.8-acme-orders/lib/src/main/java/com/acme/orders/lib/v1/OrderStatus.java
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/3.8-acme-orders/lib/src/main/java/com/acme/orders/lib/v1/common/ApiError.java
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/3.8-acme-orders/lib/src/main/java/com/acme/orders/lib/v1/common/BaseType.java
+/home/ahmed/Desktop/MicroService/Microservice Development with Java EE 8/Code/Section 3/3.8-acme-orders/lib/src/main/java/com/acme/orders/lib/v1/common/OrderServiceErrorCode.java

@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  CURRENCY_EXCHANGE_URI: http://currency-exchange
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2021-02-01T19:44:41Z"
+  name: currency-conversion
+  namespace: default
+  resourceVersion: "188696"
+  selfLink: /api/v1/namespaces/default/configmaps/currency-conversion
+  uid: 4a9f35f2-87da-43a2-95ad-ef7aa71f45da
