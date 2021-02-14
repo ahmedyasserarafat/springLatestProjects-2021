@@ -1,6 +1,6 @@
 # Kubernetes Crash Course for Java Developers on Google Cloud
 
-[![Image](https://www.springboottutorial.com/images/Course-KubernetesCrashCourse.png "Kubernetes Crash Course for Java Spring Boot Developers")](https://www.udemy.com/course/kubernetes-crash-course-for-java-developers/)
+
 
 
 ## Learn Kubernetes and Docker with Google Kubernetes Engine deploying Spring Boot Microservices
